@@ -16,8 +16,8 @@ class Footer extends React.Component{
           <span className="Footer-social">
           </span>
           <div className="Footer-credits">
-            <span className="Footer-credit">
-              😁, by <a href='https://www.linkedin.com/in/khalilgharbaoui'>
+            <span className="Footer-credit" style="color: white;">
+              😁 by <a href='https://www.linkedin.com/in/khalilgharbaoui'>
               khalil gharbaoui
             </a>
           </span>
