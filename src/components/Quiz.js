@@ -1,5 +1,8 @@
 import React from 'react';
 import QuestionList from './QuestionList';
+import ScoreBox from './ScoreBox';
+import Results from './Results';
+
 
 
 class Quiz extends React.Component{
@@ -29,7 +32,7 @@ class Quiz extends React.Component{
         },
         {
           id:2,
-          text: 'What is your mothers name?',
+          text: 'What is your cats name?',
           choices: [
             {
               id: 'a',
@@ -52,34 +55,34 @@ class Quiz extends React.Component{
           choices: [
             {
               id: 'a',
-              text: 'fleur'
+              text: 'Brad'
             },
             {
               id: 'b',
-              text: 'Lucy'
+              text: 'Otis'
             },
             {
               id: 'c',
-              text: 'Winnie'
+              text: 'Bond'
             },
           ],
           correct: 'a'
         },
         {
           id:4,
-          text: 'What is your friends name?',
+          text: 'What is you favorite day?',
           choices: [
             {
               id: 'a',
-              text: 'fleur'
+              text: 'Monday'
             },
             {
               id: 'b',
-              text: 'Lucy'
+              text: 'Tuesday'
             },
             {
               id: 'c',
-              text: 'Winnie'
+              text: 'Wensday'
             },
           ],
           correct: 'a'
@@ -90,19 +93,39 @@ class Quiz extends React.Component{
     }
 
   }
+  setScore(score){
+    this.setState({
+      score
+    });
+  }
 
+  setCurrent(current){
+    this.setState({
+      current
+    });
+  }
   render(){
+    if (this.state.current > this.state.questions.length){
+      var scorebox = '';
+      var results = <Results {...this.state} />
+
+    }
+    else{
+      var scorebox = <ScoreBox {...this.state} />
+      var results = '';
+    }
     return (
-
-
-
       <div>
-      <QuestionList />
+        
+
+            {scorebox}
+          <QuestionList {...this.state} setCurrent={this.setCurrent.bind(this)} setScore={this.setScore.bind(this)} />
+          {results}
+
+
     </div>
-
-
-  );
-}
+    );
+  }
 }
 
 export default Quiz;
