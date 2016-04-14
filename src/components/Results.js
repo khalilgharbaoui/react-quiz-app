@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Results extends React.Component{
 
@@ -17,7 +18,7 @@ class Results extends React.Component{
         <h4>You Got {this.props.score} out of {this.props.questions.length} Correct</h4>
         <h1>{percent}% - {message}</h1>
         <hr />
-        <a href="/">Take Again</a>
+        <a href={"/"} className="btn btn-primary">Try Again?</a>
       </div>
     )
   }
