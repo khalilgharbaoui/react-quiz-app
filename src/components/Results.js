@@ -7,11 +7,11 @@ class Results extends React.Component{
 
     var percent = (this.props.score / this.props.questions.length * 100);
       if(percent > 80){
-        var message = 'Awsome Job!'
+        var message = 'Awsome Job!👏'
     } else if(percent < 80 && percent > 40){
-        var message = 'You did ok!'
+        var message = 'You did ok!😏'
     } else{
-      var message = "You don't know shit"
+      var message = "You don't know 😱"
     }
     return (
       <div className="well">
