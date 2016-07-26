@@ -13,79 +13,85 @@ class Quiz extends React.Component{
       questions: [
         {
           id:1,
-          text: 'What is your name?',
+          text: 'What is box model?',
           choices: [
             {
               id: 'a',
-              text: 'Mikeal'
+              text: 'A box with a sexy model in it...'
             },
             {
               id: 'b',
-              text: 'Lucy'
+              text: 'A model of a cardboard box...'
             },
             {
               id: 'c',
-              text: 'Stevy'
+              text: 'In a document, each element is represented as a rectangular box.'
             },
+            {
+              id: 'd',
+              text: 'The box my cat sleeps in...'
+            }
           ],
-          correct: 'b'
+          correct: 'c'
         },
         {
           id:2,
-          text: 'What is your cats name?',
+          text: 'What is DOM?',
           choices: [
             {
               id: 'a',
-              text: 'fleur'
+              text: 'Dutch for "Stupid"'
             },
             {
               id: 'b',
-              text: 'Lucy'
+              text: 'Domain Object Momma'
             },
             {
               id: 'c',
-              text: 'Winnie'
-            },
+              text: 'Document Object Model'
+            }
           ],
           correct: 'c'
         },
         {
           id:3,
-          text: 'What is your friends name?',
+          text: 'How do you add a class in jQuery?',
           choices: [
             {
               id: 'a',
-              text: 'Brad'
+              text: '$.addClass('class_name')'
             },
             {
               id: 'b',
-              text: 'Otis'
+              text: '$.appendTo('selector')'
             },
+
             {
               id: 'c',
-              text: 'Bond'
-            },
+              text: '$.css('property', 'value');
+'
+            }
           ],
           correct: 'a'
         },
         {
           id:4,
-          text: 'What is you favorite day?',
+          text: 'What command is used to update node packages?',
           choices: [
             {
               id: 'a',
-              text: 'Monday'
+              text: 'npm install'
             },
             {
               id: 'b',
-              text: 'Tuesday'
+              text: 'npm update'
             },
             {
               id: 'c',
-              text: 'Wensday'
-            },
+              text: 'npm make update'
+            }
           ],
-          correct: 'a'
+          correct: 'b'
         },
       ],
       score: 0,
@@ -116,7 +122,7 @@ class Quiz extends React.Component{
     }
     return (
       <div>
-        
+
 
             {scorebox}
           <QuestionList {...this.state} setCurrent={this.setCurrent.bind(this)} setScore={this.setScore.bind(this)} />
