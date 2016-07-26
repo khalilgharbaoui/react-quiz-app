@@ -45,3 +45,4 @@ $ bash deploy
 
 - add useful questions!!!
 - add prices based on results
+- make forms more interactive
