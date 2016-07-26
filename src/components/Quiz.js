@@ -25,7 +25,7 @@ class Quiz extends React.Component{
             },
             {
               id: 'c',
-              text: 'In a document, each element is represented as a rectangular box.'
+              text: 'In a document, each element is represented as a rectangular box model.'
             },
             {
               id: 'd',
@@ -59,17 +59,16 @@ class Quiz extends React.Component{
           choices: [
             {
               id: 'a',
-              text: '$.addClass('class_name')'
+              text: '$.addClass("class_name")'
             },
             {
               id: 'b',
-              text: '$.appendTo('selector')'
+              text: '$.appendTo("selector")'
             },
 
             {
               id: 'c',
-              text: '$.css('property', 'value');
-'
+              text: '$.css("property", "value");'
             }
           ],
           correct: 'a'
