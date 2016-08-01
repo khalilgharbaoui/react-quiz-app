@@ -17,7 +17,7 @@ class Footer extends React.Component{
           </span>
           <div className="Footer-credits">
             <span className="Footer-credit">
-              😁 by <a href='https://www.linkedin.com/in/khalilgharbaoui'>
+              🤓by <a href='https://www.linkedin.com/in/khalilgharbaoui'>
               khalil gharbaoui
             </a>
           </span>
